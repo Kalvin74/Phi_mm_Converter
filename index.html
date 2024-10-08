@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phi, mm, Micrometer Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="converter">
+        <h1 class="title">Phi, mm, Micrometer Converter</h1>
+
+        <div class="inputField">
+            <input type="number" placeholder="Input value" id="input_box" oninput="convert()">
+            <select id="inputCategory" onchange="convert()">
+                <option value="phi">Phi</option>
+                <option value="millimeter">Millimeter</option>
+                <option value="micrometer">Micrometer</option>
+            </select>
+            <span>=</span>
+            <input type="number" placeholder="Result" id="result_box" readonly>
+            <select id="resultCategory" onchange="convert()">
+                <option value="phi">Phi</option>
+                <option value="millimeter">Millimeter</option>
+                <option value="micrometer">Micrometer</option>
+            </select>
+        </div>
+
+        <div class="btn">
+            <button onclick="clearFields()">All Clear</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

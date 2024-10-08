@@ -1,0 +1,75 @@
+body {
+    font-family: 'Optima', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.converter {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 600px; /* Increased width to accommodate dropdowns */
+}
+
+.title {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.inputField {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between elements */
+    gap: 10px;
+    margin-bottom: 15px; /* Space between input field and button */
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 100px; /* Fixed width for input */
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease;
+    text-align: center; /* Center the text */
+}
+
+input:focus {
+    border-color: #74ebd5;
+    box-shadow: 0 0 8px rgba(116, 235, 213, 0.5);
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 130px; /* Fixed width for dropdowns */
+    box-sizing: border-box;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: #74ebd5;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0f9a9a;
+}
